@@ -20,7 +20,10 @@ npx serve .
 
 ## Deploy
 
-Import this repo into [Vercel](https://vercel.com/new) with the framework preset **Other**. Leave the build command empty and keep the output directory as the root.
+`npm run build` copies the site into `dist/` (no dependencies needed).
+
+- **From GitHub:** import this repo into [Vercel](https://vercel.com/new). `vercel.json` already sets the build command (`npm run build`) and output directory (`dist`).
+- **From the CLI:** `npm run build`, then `npx vercel dist --prod`.
 
 ## Files
 
