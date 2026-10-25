@@ -1,0 +1,641 @@
+<!doctype html>
+<html lang="en" data-view="hall">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Yahia Delly | Customer Support Agent</title>
+  <meta name="description" content="Yahia Delly, Customer Support Agent based in Lisbon. Detail-oriented, calm under pressure, focused on quality, accuracy and compliance.">
+  <meta property="og:title" content="Yahia Delly | Customer Support Agent">
+  <meta property="og:description" content="Walk through the support desk: experience, skills, languages and contact.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat+Brush&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <noscript><style>.intro{display:none}.reveal{opacity:1!important;transform:none!important}.rise>span{transform:none!important}</style></noscript>
+</head>
+<body>
+
+<!-- shared hand-drawn filters -->
+<svg width="0" height="0" aria-hidden="true" class="defs">
+  <defs>
+    <filter id="wobble" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018" numOctaves="2" seed="7" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="3.2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="wobble-lg" x="-5%" y="-5%" width="110%" height="110%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="2" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <filter id="ink" x="-6%" y="-6%" width="112%" height="112%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.03" numOctaves="2" seed="2" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="2" xChannelSelector="R" yChannelSelector="G" result="w"/>
+      <feGaussianBlur in="w" stdDeviation="0.45" result="b"/>
+      <feComponentTransfer in="b" result="bleed"><feFuncA type="linear" slope="2.2" intercept="-0.25"/></feComponentTransfer>
+      <feOffset in="w" dx="0.9" dy="0.7" result="off"/>
+      <feComponentTransfer in="off" result="dup"><feFuncA type="linear" slope="0.35"/></feComponentTransfer>
+      <feMerge><feMergeNode in="dup"/><feMergeNode in="bleed"/></feMerge>
+    </filter>
+    <pattern id="hp" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <line class="keep" x1="0" y1="0" x2="0" y2="8" stroke="#111" stroke-width="1.4"/>
+    </pattern>
+  </defs>
+</svg>
+
+<!-- ============ 1. LOADING INTRO ============ -->
+<div id="intro" class="intro" aria-hidden="true">
+  <svg viewBox="0 0 1600 240" class="intro-name" style="filter:url(#wobble)">
+    <text x="800" y="190" text-anchor="middle" class="intro-text">YAHIA DELLY</text>
+  </svg>
+  <p class="intro-sub">Customer Support Agent · Portfolio Nº 2026</p>
+  <div class="intro-load">
+    <span class="intro-bar"><i id="introBar"></i></span>
+    <span class="intro-pct"><span id="introPct">000</span>%</span>
+  </div>
+  <p class="intro-skip">click to skip</p>
+</div>
+
+<!-- fixed controls -->
+<button type="button" id="viewBtn" class="fixed-btn view-btn">Classic view</button>
+<button type="button" id="soundBtn" class="fixed-btn sound-btn" aria-pressed="false" aria-label="Turn sound on">
+  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M11 4.702a.705.705 0 0 0-1.203-.498L6.413 7.587A1.4 1.4 0 0 1 5.416 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.416a1.4 1.4 0 0 1 .997.413l3.383 3.384A.705.705 0 0 0 11 19.298z"/>
+    <g class="ico-off"><line x1="22" x2="16" y1="9" y2="15"/><line x1="16" x2="22" y1="9" y2="15"/></g>
+    <g class="ico-on"><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.364 18.364a9 9 0 0 0 0-12.728"/></g>
+  </svg>
+  <span class="sound-label">Sound off</span>
+</button>
+
+<!-- ============ 2. ENTRANCE / LANDING ============ -->
+<div id="entrance" class="entrance">
+  <header class="topnav">
+    <nav aria-label="Primary navigation">
+      <a href="#top" class="brand" aria-label="Back to top">YD<span>.</span></a>
+      <ul>
+        <li><a href="#sec-about" data-room="1">About</a></li>
+        <li><a href="#sec-skills" data-room="2">Skills</a></li>
+        <li><a href="#sec-experience" data-room="0">Work</a></li>
+        <li><a href="#sec-languages" data-room="3">Languages</a></li>
+        <li><a href="#sec-education" data-room="4">Education</a></li>
+        <li><a href="#sec-contact" data-room="5">Contact</a></li>
+      </ul>
+      <div class="nav-social">
+        <a href="mailto:yahia.delly2000@gmail.com" aria-label="Email">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+        </a>
+        <!-- TODO: replace # with the LinkedIn profile URL -->
+        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+        </a>
+        <a href="https://wa.me/351931435029" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg>
+        </a>
+      </div>
+    </nav>
+  </header>
+
+  <section id="top" class="hero">
+    <div class="hero-meta rise"><span>Portfolio · Nº 2026</span><span>Lisbon, Portugal</span></div>
+    <h1 class="hero-title" aria-label="Yahia Delly">
+      <span class="rise"><span>Yahia</span></span>
+      <span class="rise outline-wrap"><span class="outline">Delly
+        <svg viewBox="0 0 600 24" preserveAspectRatio="none" class="sketch underline" aria-hidden="true" style="filter:url(#wobble)">
+          <path d="M4 14C80 4 140 22 220 12S380 6 460 14 560 18 596 8" fill="none" stroke="#ff4d1c" stroke-width="9" stroke-linecap="round"/>
+        </svg></span></span>
+    </h1>
+
+    <div class="scene" id="scene">
+      <!-- back layer -->
+      <svg viewBox="0 0 800 520" class="sketch layer" aria-hidden="true">
+        <g fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#wobble-lg)">
+          <circle cx="650" cy="72" r="34" fill="#ff4d1c"/>
+          <path d="M650 22v-10M650 132v-10M700 72h10M590 72h-10M686 36l8-8M614 36l-8-8M686 108l8 8M614 108l-8 8"/>
+          <path d="M430 52q16-14 32-2q18-10 30 4q-6 10-30 10q-26 0-32-12z"/>
+          <path d="M150 96q12-10 24-2q14-8 24 3q-5 8-24 8q-20 0-24-9z" stroke-width="2.4"/>
+          <path d="M0 452q120-70 250-18t250-14 300-30"/>
+          <path d="M60 470q40-20 80-8M690 462q40-16 90-4" stroke-width="2"/>
+        </g>
+      </svg>
+
+      <!-- mid layer: the support desk -->
+      <svg viewBox="0 0 800 520" class="sketch layer z10" aria-hidden="true">
+        <g fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#wobble)">
+          <rect x="130" y="170" width="540" height="300" fill="#f4f1ea"/>
+          <path d="M160 176V466M205 176V466M250 176V466M295 176V466M340 176V466M385 176V466M430 176V466M475 176V466M520 176V466M565 176V466M610 176V466M655 176V466" stroke-width="1.4" opacity="0.35"/>
+          <path d="M90 170h620l-22-60H112z" fill="#e9e4d8"/>
+          <path d="M120 112q4 28-2 56M144 112q4 28-2 56M169 112q4 28-2 56M193 112q4 28-2 56M218 112q4 28-2 56M242 112q4 28-2 56M266 112q4 28-2 56M291 112q4 28-2 56M315 112q4 28-2 56M340 112q4 28-2 56M364 112q4 28-2 56M388 112q4 28-2 56M413 112q4 28-2 56M437 112q4 28-2 56M462 112q4 28-2 56M486 112q4 28-2 56M510 112q4 28-2 56M535 112q4 28-2 56M559 112q4 28-2 56M584 112q4 28-2 56M608 112q4 28-2 56M632 112q4 28-2 56M657 112q4 28-2 56M681 112q4 28-2 56" stroke-width="1.8"/>
+          <path d="M82 172h636" stroke-width="4"/>
+          <!-- door opening, revealed when the shutter lifts -->
+          <rect x="300" y="270" width="200" height="200" fill="url(#hp)"/>
+          <path d="M320 420h160M328 420v50M472 420v50"/>
+          <rect x="350" y="372" width="60" height="44" rx="4" fill="#f4f1ea"/>
+          <path d="M362 386h36M362 396h24M362 406h30" stroke-width="2"/>
+          <path d="M430 420v-30q0-12 12-12t12 12v30" fill="#f4f1ea"/>
+          <rect x="292" y="258" width="216" height="14" fill="#f4f1ea"/>
+          <path d="M292 270v200M508 270v200" stroke-width="4"/>
+          <path d="M340 172v20M460 172v20"/>
+          <!-- window with a support chat on screen -->
+          <rect x="160" y="225" width="110" height="95" fill="#f4f1ea"/>
+          <rect x="168" y="233" width="94" height="79"/>
+          <rect x="180" y="242" width="70" height="52" rx="9" fill="#e9e4d8"/>
+          <rect x="188" y="249" width="54" height="36" rx="6" fill="#111"/>
+          <path d="M194 256h22q4 0 4 4v4q0 4-4 4h-14l-6 5v-5q-2 0-2-4v-4q0-4 0-4z" stroke="#f4f1ea" stroke-width="2"/>
+          <rect class="animate-blink keep" x="224" y="272" width="11" height="4" fill="#ff4d1c" stroke="none"/>
+          <path d="M207 294l-5 18M223 294l5 18M196 312h38"/>
+          <path d="M150 320h130" stroke-width="5"/>
+          <!-- wall clock -->
+          <circle cx="598" cy="232" r="24" fill="#f4f1ea"/>
+          <path d="M598 232v-14M598 232l10 6" stroke-width="2.6"/>
+          <path d="M598 212v3M618 232h-3M598 252v-3M578 232h3" stroke-width="2"/>
+          <!-- shelf: headset, mug, plant -->
+          <path d="M530 332h125M545 332l-10 18M640 332l10 18" stroke-width="4"/>
+          <path d="M556 330v-22" />
+          <path d="M540 308q16-32 32 0" />
+          <rect x="535" y="302" width="9" height="15" rx="3" fill="#f4f1ea"/>
+          <rect x="568" y="302" width="9" height="15" rx="3" fill="#f4f1ea"/>
+          <path d="M576 314q-2 10-14 10" stroke="#ff4d1c" stroke-width="2.6"/>
+          <path d="M594 308h22v22h-22zM616 313q9 3 0 11" fill="#f4f1ea"/>
+          <path class="animate-steam keep" d="M601 300q-4-8 2-14M609 300q-4-8 2-14" stroke-width="2"/>
+          <path d="M638 330v-26M638 318l-8-4v-8M638 312l8-3v-7"/>
+          <!-- mailbox -->
+          <path d="M738 470v-72" stroke-width="5"/>
+          <path d="M712 398v-18q0-14 26-14t26 14v18z" fill="#f4f1ea"/>
+          <path d="M722 384h32" stroke-width="2"/>
+          <rect class="flag" x="764" y="368" width="6" height="22" fill="#ff4d1c"/>
+          <path d="M30 470h740" stroke-width="4"/>
+          <path d="M50 484l16-5M110 486l16-5M200 484l16-5M330 487l16-5M480 485l16-5M610 486l16-5M700 484l16-5" stroke-width="2"/>
+        </g>
+      </svg>
+
+      <!-- hanging sign -->
+      <div class="sign" style="left:35.5%;top:36.5%;width:29%;height:14.5%">
+        <span>Customer<br><em>Support</em></span>
+      </div>
+
+      <!-- the door (shutter) -->
+      <button type="button" class="hot door" id="doorBtn" aria-label="Open the door and see my work" style="left:37.5%;top:51.9%;width:25%;height:38.5%">
+        <span class="shutter">
+          <span class="slats" aria-hidden="true"></span>
+          <span class="sticker" style="left:6%;top:8%;rotate:-8deg">CRM</span>
+          <span class="sticker" style="left:46%;top:6%;rotate:6deg">Tickets</span>
+          <span class="sticker" style="left:24%;top:27%;rotate:-3deg">Policy</span>
+          <span class="sticker" style="left:5%;top:46%;rotate:7deg">Excel</span>
+          <span class="sticker" style="left:50%;top:40%;rotate:-7deg">Outlook</span>
+          <span class="sticker" style="left:26%;top:62%;rotate:5deg">QA</span>
+          <span class="sticker" style="left:58%;top:62%;rotate:-4deg">EN·FR·AR</span>
+          <span class="sticker" style="left:4%;top:76%;rotate:-6deg">Teamwork</span>
+          <span class="hot-label work">work ↑</span>
+        </span>
+      </button>
+
+      <button type="button" class="hot" id="windowBtn" aria-label="Look through the window to read about me" style="left:19.5%;top:42.5%;width:14.5%;height:20%">
+        <span class="hot-label below">about ↓</span>
+      </button>
+      <button type="button" class="hot" id="mailBtn" aria-label="Open the mailbox to get in touch" style="left:88%;top:69%;width:8.6%;height:22%">
+        <span class="hot-label above">contact</span>
+      </button>
+
+      <span class="hand-note" aria-hidden="true" style="left:19%;top:79%">
+        <span>click the door</span>
+        <svg viewBox="0 0 90 40" class="sketch" style="filter:url(#wobble)"><path d="M4 30C30 36 56 24 82 12M64 6l20 5-8 18" fill="none" stroke="#ff4d1c" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      <span class="stamp" aria-hidden="true" style="left:5%;top:12%">Open to work</span>
+
+      <!-- front layer -->
+      <svg viewBox="0 0 800 520" class="sketch layer z20" aria-hidden="true">
+        <g fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#wobble)">
+          <path d="M44 420h72l-8 50H52z" fill="#f4f1ea"/>
+          <path d="M52 436h56" stroke-width="2"/>
+          <path d="M80 420q-10-40 4-86"/>
+          <path d="M84 334q-30-34-62-26M84 334q-14-44 6-62M84 334q30-38 66-26M84 334q36-18 62 6M84 334q-38-12-60 12"/>
+          <path d="M60 314l-4 10M40 320l-6 8M92 300l4 10M120 320l8 6M132 336l10 2" stroke-width="2"/>
+          <rect x="540" y="420" width="116" height="50" fill="#f4f1ea"/>
+          <path d="M540 437h116M540 454h116M570 420v50M626 420v50" stroke-width="2"/>
+          <path d="M578 420l-4-34h58l-4 34z" fill="#f4f1ea"/>
+          <rect x="582" y="372" width="48" height="36" rx="3" fill="#111" transform="rotate(-4 606 390)"/>
+          <path d="M594 391l8 8 16-16" stroke="#ff4d1c" stroke-width="3.4"/>
+          <path d="M572 420h68" stroke-width="4"/>
+          <path d="M150 470l-6-14M156 470l2-16M162 470l8-12M690 470l-6-14M696 470l2-16M702 470l8-12" stroke-width="2.4"/>
+          <path d="M540 462q-60 14-120 6t-90 4" stroke-width="2.4"/>
+        </g>
+      </svg>
+      <span class="sticker static" style="left:68.2%;top:84.4%;rotate:-6deg">Word</span>
+      <span class="sticker static" style="left:72.6%;top:88%;rotate:5deg">Windows</span>
+      <span class="sticker static" style="left:76.4%;top:83.4%;rotate:-4deg">QA</span>
+    </div>
+
+    <div class="hero-foot">
+      <div class="explorer" role="note">
+        <p class="kicker">Explorer</p>
+        <p id="explorerText">Scroll, press the down arrow or click the door to walk into the house. The window jumps to About, the mailbox to Contact.</p>
+      </div>
+      <p class="tagline">Calm, careful support that gets every decision right. Cases, disputes and policy enforcement, handled with accuracy in a fast-paced environment.</p>
+    </div>
+  </section>
+
+  <div class="marquee" role="marquee" aria-label="Available for work. Customer support. Screen reviewer. Tunis to Lisbon.">
+    <div class="marquee-inner">
+      <div class="marquee-track">
+        <div class="marquee-group" aria-hidden="true">
+          <span>Available for work</span><i>✦</i><span>Customer support</span><i>✦</i><span>Screen reviewer</span><i>✦</i><span>Policy &amp; compliance</span><i>✦</i><span>Tunis → Lisbon</span><i>✦</i>
+        </div>
+        <div class="marquee-group" aria-hidden="true">
+          <span>Available for work</span><i>✦</i><span>Customer support</span><i>✦</i><span>Screen reviewer</span><i>✦</i><span>Policy &amp; compliance</span><i>✦</i><span>Tunis → Lisbon</span><i>✦</i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="enter-hint">scroll to walk in ↓</p>
+
+  <!-- ============ CLASSIC SECTIONS (also used as hallway rooms) ============ -->
+  <div id="classic">
+
+    <!-- 01 ABOUT -->
+    <section id="sec-about" class="section reveal">
+      <div class="sec-head">
+        <div class="sec-bar"><span class="no">Nº 01</span><span class="sec-label">Get to know me</span></div>
+        <h2><span class="rise"><span>About</span></span> <span class="rise"><span>Me</span></span></h2>
+        <svg viewBox="0 0 400 14" class="sketch sec-line" aria-hidden="true"><path d="M3 8q50-8 100-2t100 0 100-3 94 4" fill="none" stroke="#ff4d1c" stroke-width="4" stroke-linecap="round"/></svg>
+      </div>
+      <div class="about-grid">
+        <figure class="polaroid reveal">
+          <span class="tape l" aria-hidden="true"></span><span class="tape r" aria-hidden="true"></span>
+          <div class="polaroid-in">
+            <!-- Replace this sketch with a real photo: <img src="photo.jpg" alt="Portrait of Yahia Delly"> -->
+            <div class="photo">
+              <svg viewBox="0 0 300 375" class="sketch" role="img" aria-label="Sketch of Yahia wearing a support headset">
+                <g fill="none" stroke="#111" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" filter="url(#wobble-lg)">
+                  <circle cx="230" cy="70" r="26" fill="#ff4d1c" stroke="none" opacity=".9"/>
+                  <path d="M60 375q0-110 90-110t90 110" fill="#f4f1ea"/>
+                  <path d="M125 268l25 40 25-40"/>
+                  <path d="M136 232v34M164 232v34"/>
+                  <ellipse cx="150" cy="180" rx="52" ry="62" fill="#fffdf8"/>
+                  <path d="M98 170q-4-62 52-66q56 4 52 66q-10-30-30-36q-26 14-74 36z" fill="#111"/>
+                  <path d="M128 186q6-5 12 0M160 186q6-5 12 0"/>
+                  <path d="M150 192v16l-6 4"/>
+                  <path d="M136 222q14 10 28 0"/>
+                  <path d="M90 180q0-84 60-84t60 84" stroke-width="4"/>
+                  <rect x="80" y="166" width="18" height="34" rx="6" fill="#f4f1ea"/>
+                  <rect x="202" y="166" width="18" height="34" rx="6" fill="#f4f1ea"/>
+                  <path d="M98 196q8 34 40 32" stroke="#ff4d1c" stroke-width="3"/>
+                  <circle cx="140" cy="228" r="5" fill="#ff4d1c" stroke="none"/>
+                </g>
+              </svg>
+            </div>
+          </div>
+          <figcaption>Yahia, Lisbon</figcaption>
+        </figure>
+        <div class="about-text">
+          <h3 class="reveal">Calm, careful &amp; <span class="outline">customer-first</span> support</h3>
+          <p class="reveal">Based in <strong>Lisbon, Portugal</strong>, I am a <strong>Customer Support Agent</strong> with hands-on experience at Concentrix in Tunisia: analysing cases, managing disputes and applying internal policies every day. Strong communication, analytical thinking and attention to detail, with a keen interest in a <strong>Screen Reviewer</strong> role. Committed to quality, accuracy and compliance, and currently open to <mark>new opportunities</mark>.</p>
+          <div class="chips reveal">
+            <span class="chip hot-chip" style="rotate:-3deg">Customer support</span>
+            <span class="chip" style="rotate:2deg">Policy enforcement</span>
+            <span class="chip" style="rotate:0deg">Dispute handling</span>
+            <span class="chip" style="rotate:-2deg">CRM</span>
+            <span class="chip hot-chip" style="rotate:3deg">Quality &amp; accuracy</span>
+            <span class="chip" style="rotate:1deg">4 languages</span>
+          </div>
+        </div>
+      </div>
+      <div class="stats">
+        <div class="reveal"><b>21</b><span class="st-l">months at Concentrix</span><span class="st-h">cases, disputes, policies</span></div>
+        <div class="reveal"><b>3<i>+</i></b><span class="st-l">companies</span><span class="st-h">retail, audit, support</span></div>
+        <div class="reveal"><b>4</b><span class="st-l">languages</span><span class="st-h">EN · FR · AR · PT</span></div>
+        <div class="reveal"><b>1</b><span class="st-l">mission</span><span class="st-h">get every decision right</span></div>
+      </div>
+    </section>
+
+    <!-- 02 SKILLS -->
+    <section id="sec-skills" class="section reveal">
+      <div class="sec-head">
+        <div class="sec-bar"><span class="no">Nº 02</span><span class="sec-label">What I bring to the desk</span></div>
+        <h2><span class="rise"><span>Skills</span></span></h2>
+        <svg viewBox="0 0 400 14" class="sketch sec-line" aria-hidden="true"><path d="M3 8q50-8 100-2t100 0 100-3 94 4" fill="none" stroke="#ff4d1c" stroke-width="4" stroke-linecap="round"/></svg>
+      </div>
+      <ul class="skills">
+        <li class="reveal"><div style="rotate:-5deg"><b>Policy</b><span>Ad compliance &amp; policy enforcement</span></div></li>
+        <li class="reveal"><div style="rotate:-1deg"><b>CRM</b><span>Customer relationship mgmt</span></div></li>
+        <li class="reveal"><div class="hot-tile" style="rotate:3deg"><b>Tickets</b><span>CRM &amp; ticketing tools</span></div></li>
+        <li class="reveal"><div style="rotate:-4deg"><b>Omni</b><span>Multichannel customer relations</span></div></li>
+        <li class="reveal"><div style="rotate:0deg"><b>Solve</b><span>Problem solving</span></div></li>
+        <li class="reveal"><div style="rotate:4deg"><b>Decide</b><span>Decision making</span></div></li>
+        <li class="reveal"><div style="rotate:-3deg"><b>Time</b><span>Time management</span></div></li>
+        <li class="reveal"><div class="hot-tile" style="rotate:1deg"><b>Multi</b><span>Multitasking</span></div></li>
+        <li class="reveal"><div style="rotate:5deg"><b>Calm</b><span>Working under pressure</span></div></li>
+        <li class="reveal"><div style="rotate:-2deg"><b>Adapt</b><span>Adaptability</span></div></li>
+        <li class="reveal"><div style="rotate:2deg"><b>Team</b><span>Teamwork</span></div></li>
+        <li class="reveal"><div style="rotate:-5deg"><b>Office</b><span>Word · Excel · Outlook</span></div></li>
+        <li class="reveal"><div class="hot-tile" style="rotate:-1deg"><b>Typing</b><span>Fast &amp; accurate typing</span></div></li>
+        <li class="reveal"><div style="rotate:3deg"><b>Win</b><span>Windows proficiency</span></div></li>
+        <li class="reveal"><div style="rotate:-4deg"><b>PC</b><span>Computer skills</span></div></li>
+        <li class="reveal"><div style="rotate:0deg"><b>QA</b><span>Quality, accuracy &amp; detail</span></div></li>
+      </ul>
+    </section>
+
+    <!-- 03 EXPERIENCE -->
+    <section id="sec-experience" class="section reveal">
+      <div class="sec-head">
+        <div class="sec-bar"><span class="no">Nº 03</span><span class="sec-label">Where I've worked</span></div>
+        <h2><span class="rise"><span>My</span></span> <span class="rise"><span>Work</span></span></h2>
+        <svg viewBox="0 0 400 14" class="sketch sec-line" aria-hidden="true"><path d="M3 8q50-8 100-2t100 0 100-3 94 4" fill="none" stroke="#ff4d1c" stroke-width="4" stroke-linecap="round"/></svg>
+      </div>
+      <div class="sheets">
+        <article class="sheet">
+          <div class="sheet-bar"><span>Sheet 01 / 03</span><span class="soft">01/2023 – 09/2024</span></div>
+          <div class="sheet-grid">
+            <div class="sheet-cover blueprint">
+              <svg viewBox="0 0 480 300" class="sketch" role="img" aria-label="Illustrated cover: a headset, chat bubbles and a resolved ticket">
+                <g fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#wobble-lg)">
+                  <path d="M120 170q0-90 80-90t80 90" stroke-width="5"/>
+                  <rect x="100" y="160" width="34" height="62" rx="12" fill="#fffdf8"/>
+                  <rect x="266" y="160" width="34" height="62" rx="12" fill="#fffdf8"/>
+                  <path d="M284 220q-6 40-56 40" stroke="#ff4d1c" stroke-width="4"/>
+                  <circle cx="222" cy="260" r="8" fill="#ff4d1c"/>
+                  <path d="M310 60h120q10 0 10 10v40q0 10-10 10h-80l-20 18v-18h-20q-10 0-10-10v-40q0-10 10-10z" fill="#fffdf8"/>
+                  <path d="M330 82h80M330 98h50" stroke-width="2.4"/>
+                  <path d="M40 60h90q8 0 8 8v30q0 8-8 8h-60l-14 14v-14h-16q-8 0-8-8v-30q0-8 8-8z" fill="#e9e4d8"/>
+                  <circle cx="64" cy="83" r="3" fill="#111"/><circle cx="84" cy="83" r="3" fill="#111"/><circle cx="104" cy="83" r="3" fill="#111"/>
+                  <rect x="330" y="170" width="110" height="80" fill="#fffdf8" transform="rotate(4 385 210)"/>
+                  <path d="M346 192h60M346 206h74M346 220h40" stroke-width="2"/>
+                  <circle cx="412" cy="232" r="18" stroke="#ff4d1c" stroke-width="3"/>
+                  <path d="M404 232l6 6 11-12" stroke="#ff4d1c" stroke-width="3"/>
+                </g>
+              </svg>
+              <span class="cover-note">Illustrated cover, not a screenshot</span>
+            </div>
+            <div class="sheet-body">
+              <h3>Concentrix</h3>
+              <p class="hand">Customer Support Agent</p>
+              <p>Front-line support for international customers: analysing cases, managing disputes and applying internal policies with professional English communication.</p>
+              <ul class="tags"><li>CRM</li><li>Disputes</li><li>Policy</li><li>Reporting</li><li>English</li></ul>
+              <div class="details" hidden>
+                <ul>
+                  <li>Analyzed cases, managed disputes and applied internal policies.</li>
+                  <li>Provided professional communication in English.</li>
+                  <li>Contributed to process improvements through field feedback.</li>
+                  <li>Daily use of CRM and reporting tools for performance monitoring.</li>
+                </ul>
+              </div>
+              <div class="sheet-actions"><button type="button" class="btn-line" data-details aria-expanded="false">Details ＋</button></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="sheet">
+          <div class="sheet-bar"><span>Sheet 02 / 03</span><span class="soft">01/2022 – 05/2022</span></div>
+          <div class="sheet-grid">
+            <div class="sheet-cover blueprint">
+              <svg viewBox="0 0 480 300" class="sketch" role="img" aria-label="Illustrated cover: stacked financial records under a magnifying glass">
+                <g fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#wobble-lg)">
+                  <rect x="90" y="70" width="170" height="200" fill="#e9e4d8" transform="rotate(-6 175 170)"/>
+                  <rect x="110" y="60" width="170" height="200" fill="#fffdf8"/>
+                  <path d="M130 90h120M130 112h90M130 134h110M130 156h70M130 178h100M130 200h80" stroke-width="2"/>
+                  <path d="M240 108l6 6 12-12M240 152l6 6 12-12" stroke="#ff4d1c" stroke-width="3"/>
+                  <circle cx="320" cy="170" r="54" fill="#fffdf8" fill-opacity=".6"/>
+                  <path d="M358 208l50 50" stroke-width="10"/>
+                  <path d="M296 160h48M296 178h30" stroke-width="2"/>
+                  <rect x="330" y="50" width="90" height="70" fill="#fffdf8"/>
+                  <path d="M346 104v-20M366 104v-34M386 104v-26M406 104v-40" stroke="#ff4d1c" stroke-width="5"/>
+                </g>
+              </svg>
+              <span class="cover-note">Illustrated cover, not a screenshot</span>
+            </div>
+            <div class="sheet-body">
+              <h3>Polina Groupe</h3>
+              <p class="hand">Intern · Internal Audit</p>
+              <p>Supported the internal audit team: reviewing financial records, verifying documentation and preparing basic reports across departments.</p>
+              <ul class="tags"><li>Audit</li><li>Documentation</li><li>Data entry</li><li>Compliance</li></ul>
+              <div class="details" hidden>
+                <ul>
+                  <li>Assisted the internal audit team in reviewing financial records, verifying documentation and preparing basic reports.</li>
+                  <li>Contributed to data entry, analysis and administrative support across departments for smooth cross-functional collaboration.</li>
+                  <li>Gained multi-departmental exposure and a foundational understanding of business operations, supply chain and compliance.</li>
+                </ul>
+              </div>
+              <div class="sheet-actions"><button type="button" class="btn-line" data-details aria-expanded="false">Details ＋</button></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="sheet">
+          <div class="sheet-bar"><span>Sheet 03 / 03</span><span class="soft">Retail track</span></div>
+          <div class="sheet-grid">
+            <div class="sheet-cover blueprint">
+              <svg viewBox="0 0 480 300" class="sketch" role="img" aria-label="Illustrated cover: store shelves, boxes and a shopping bag">
+                <g fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#wobble-lg)">
+                  <path d="M60 60v200M240 60v200M60 120h180M60 190h180M60 260h180" stroke-width="4"/>
+                  <rect x="76" y="84" width="40" height="36" fill="#fffdf8"/>
+                  <rect x="122" y="94" width="34" height="26" fill="#e9e4d8"/>
+                  <rect x="164" y="80" width="58" height="40" fill="#fffdf8"/>
+                  <circle cx="98" cy="170" r="20" fill="#fffdf8"/>
+                  <path d="M80 164q18 8 36 0M98 150v40"/>
+                  <rect x="134" y="150" width="40" height="40" fill="#ff4d1c"/>
+                  <rect x="184" y="160" width="40" height="30" fill="#fffdf8"/>
+                  <rect x="80" y="226" width="60" height="34" fill="#e9e4d8"/>
+                  <rect x="150" y="220" width="70" height="40" fill="#fffdf8"/>
+                  <path d="M300 150h110l-12 120h-86z" fill="#fffdf8"/>
+                  <path d="M326 150q0-40 29-40t29 40" stroke-width="4"/>
+                  <path d="M330 200h50" stroke="#ff4d1c" stroke-width="4"/>
+                  <path d="M420 80l20-20M430 100h24M412 66l4-20" stroke="#ff4d1c" stroke-width="3"/>
+                </g>
+              </svg>
+              <span class="cover-note">Illustrated cover, not a screenshot</span>
+            </div>
+            <div class="sheet-body">
+              <h3>Decathlon</h3>
+              <p class="hand">Store Manager · Junior Team Leader · Sales Assistant</p>
+              <p>Grew from the sales floor to leading the team: supervising sales staff and customer engagement, managing stock and seasonal displays.</p>
+              <ul class="tags"><li>Leadership</li><li>Inventory</li><li>Suppliers</li><li>Merchandising</li></ul>
+              <div class="details" hidden>
+                <ul>
+                  <li>Supervised sales teams and customer engagement.</li>
+                  <li>Managed inventory levels, placing orders and coordinating with suppliers to maintain stock availability.</li>
+                  <li>Directed visual merchandising and stock management for seasonal displays.</li>
+                </ul>
+              </div>
+              <div class="sheet-actions"><button type="button" class="btn-line" data-details aria-expanded="false">Details ＋</button></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 04 LANGUAGES -->
+    <section id="sec-languages" class="section reveal">
+      <div class="sec-head">
+        <div class="sec-bar"><span class="no">Nº 04</span><span class="sec-label">Four ways to say hello</span></div>
+        <h2><span class="rise"><span>Languages</span></span></h2>
+        <svg viewBox="0 0 400 14" class="sketch sec-line" aria-hidden="true"><path d="M3 8q50-8 100-2t100 0 100-3 94 4" fill="none" stroke="#ff4d1c" stroke-width="4" stroke-linecap="round"/></svg>
+      </div>
+      <ul class="langs">
+        <li class="reveal"><div class="lang-card" style="rotate:-2deg"><span class="hello">مرحبا</span><b>Arabic</b><span class="meter" style="--v:5"><i></i><i></i><i></i><i></i><i></i></span><span class="lvl">Native</span></div></li>
+        <li class="reveal"><div class="lang-card hot-tile" style="rotate:1.5deg"><span class="hello">Hello</span><b>English</b><span class="meter" style="--v:4"><i></i><i></i><i></i><i></i><i></i></span><span class="lvl">Fluent</span></div></li>
+        <li class="reveal"><div class="lang-card" style="rotate:-1deg"><span class="hello">Bonjour</span><b>French</b><span class="meter" style="--v:3"><i></i><i></i><i></i><i></i><i></i></span><span class="lvl">Intermediate</span></div></li>
+        <li class="reveal"><div class="lang-card" style="rotate:2.5deg"><span class="hello">Olá</span><b>Portuguese</b><span class="meter" style="--v:1"><i></i><i></i><i></i><i></i><i></i></span><span class="lvl">Basic · learning in Lisbon</span></div></li>
+      </ul>
+    </section>
+
+    <!-- 05 EDUCATION -->
+    <section id="sec-education" class="section reveal">
+      <div class="sec-head">
+        <div class="sec-bar"><span class="no">Nº 05</span><span class="sec-label">The paper trail, pinned up</span></div>
+        <h2><span class="rise"><span>Education</span></span></h2>
+        <svg viewBox="0 0 400 14" class="sketch sec-line" aria-hidden="true"><path d="M3 8q50-8 100-2t100 0 100-3 94 4" fill="none" stroke="#ff4d1c" stroke-width="4" stroke-linecap="round"/></svg>
+      </div>
+      <div class="pinboard">
+        <svg viewBox="0 0 1000 40" preserveAspectRatio="none" class="string" aria-hidden="true"><path d="M0 10Q250 40 500 14T1000 12" fill="none" stroke="#111" stroke-width="2.5" vector-effect="non-scaling-stroke"/></svg>
+        <ul class="certs">
+          <li class="reveal">
+            <span class="pin" aria-hidden="true"></span>
+            <div class="cert" style="rotate:-2.2deg">
+              <div class="cert-img">
+                <svg viewBox="0 0 420 297" class="sketch" role="img" aria-label="Illustrated diploma">
+                  <g fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#wobble-lg)">
+                    <rect x="30" y="26" width="360" height="245" fill="#fffdf8"/>
+                    <rect x="44" y="40" width="332" height="217" stroke-width="1.4"/>
+                    <path d="M150 80h120" stroke-width="5"/>
+                    <path d="M110 118h200M130 140h160M120 162h180" stroke-width="2"/>
+                    <circle cx="300" cy="212" r="24" fill="#ff4d1c"/>
+                    <path d="M288 232l-8 30 20-12 20 12-8-30"/>
+                    <path d="M90 220q20-14 40 0t40 0" stroke-width="2"/>
+                  </g>
+                </svg>
+              </div>
+              <h3>Diploma · Technological Studies</h3>
+              <p class="org">Higher Institute of Technological Studies of Rades (ISET Rades)</p>
+              <p class="meta"><span>Diploma</span><span>01/2022 – 01/2024</span></p>
+            </div>
+          </li>
+          <li class="reveal">
+            <span class="pin" aria-hidden="true"></span>
+            <div class="cert" style="rotate:1.6deg">
+              <div class="cert-img">
+                <svg viewBox="0 0 420 297" class="sketch" role="img" aria-label="Illustrated graduation cap and books">
+                  <g fill="none" stroke="#111" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" filter="url(#wobble-lg)">
+                    <path d="M210 50l130 50-130 50-130-50z" fill="#fffdf8"/>
+                    <path d="M140 124v50q70 36 140 0v-50"/>
+                    <path d="M340 100v70" /><circle cx="340" cy="178" r="8" fill="#ff4d1c"/>
+                    <rect x="90" y="214" width="240" height="22" fill="#e9e4d8"/>
+                    <rect x="110" y="236" width="220" height="22" fill="#fffdf8"/>
+                    <rect x="100" y="258" width="250" height="20" fill="#ff4d1c"/>
+                  </g>
+                </svg>
+              </div>
+              <h3>Baccalaureate · Economic Sciences &amp; Management</h3>
+              <p class="org">Ibn Rachik High School, Ezzahra</p>
+              <p class="meta"><span>Baccalaureate</span><span>Tunisia</span></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 06 CONTACT -->
+    <section id="sec-contact" class="section reveal">
+      <div class="sec-head">
+        <div class="sec-bar"><span class="no">Nº 06</span><span class="sec-label">Let's work together</span></div>
+        <h2><span class="rise"><span>Contact</span></span></h2>
+        <svg viewBox="0 0 400 14" class="sketch sec-line" aria-hidden="true"><path d="M3 8q50-8 100-2t100 0 100-3 94 4" fill="none" stroke="#ff4d1c" stroke-width="4" stroke-linecap="round"/></svg>
+      </div>
+      <div class="contact-hero">
+        <h3 class="big"><span class="rise"><span>Let's</span></span> <span class="rise"><span>work</span></span> <span class="rise"><span class="outline">together</span></span></h3>
+        <div class="talk-row reveal">
+          <a class="talk" href="https://wa.me/351931435029" target="_blank" rel="noopener noreferrer">Let's talk
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+          </a>
+          <span class="mono-soft">+351 93 143 5029 · WhatsApp, anytime</span>
+        </div>
+      </div>
+      <div class="contact-grid">
+        <div class="c-main">
+          <div>
+            <span class="mono-soft block">Location</span>
+            <span class="strong">Lisbon, Portugal (on-site, hybrid or remote)</span>
+          </div>
+          <p>Write to me at <a class="ul" href="mailto:yahia.delly2000@gmail.com">yahia.delly2000@gmail.com</a>, or message me on <a class="ul" href="https://wa.me/351931435029" target="_blank" rel="noopener noreferrer">WhatsApp</a>. I usually reply within a day.</p>
+        </div>
+        <div class="c-social">
+          <span class="mono-soft block">Reach me</span>
+          <a href="mailto:yahia.delly2000@gmail.com">Email ↗</a>
+          <a href="https://wa.me/351931435029" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+          <!-- TODO: replace # with the LinkedIn profile URL -->
+          <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          <a href="tel:+351931435029">Phone ↗</a>
+          <a href="Yahia-Delly-CV.pdf" download>CV (PDF) ↓</a>
+        </div>
+        <div class="c-sign">
+          <div>
+            <p class="hand">Drawn and built</p>
+            <p class="strong">for <span class="signal">Yahia Delly</span></p>
+          </div>
+          <p class="mono-soft">© 2026 · Lisbon</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+
+<!-- ============ 3. WALK-THROUGH HALLWAY ============ -->
+<div id="hall" class="hall" aria-hidden="true" inert>
+  <div class="hall-persp"><div class="hall-world" id="hallWorld"></div></div>
+  <div class="hall-glow" aria-hidden="true"></div>
+  <div class="motes" id="motes" aria-hidden="true"></div>
+  <div class="hall-vignette" aria-hidden="true"></div>
+
+  <div class="hall-top">
+    <div class="hall-top-left">
+      <button type="button" class="hud-btn brand" id="hallExit" aria-label="Back to the entrance">YD<span>.</span></button>
+      <div class="hud-box">
+        <span class="hud-count" id="hallCount">01 / 06</span>
+        <ul class="hud-dots" id="hallDots" aria-label="Doors"></ul>
+      </div>
+    </div>
+  </div>
+  <div class="map-wrap">
+    <button type="button" class="hud-btn" id="mapBtn" aria-expanded="false" aria-controls="doorMap" aria-label="Door menu">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.106 5.553a2 2 0 0 0 1.788 0l3.659-1.83A1 1 0 0 1 21 4.619v12.764a1 1 0 0 1-.553.894l-4.553 2.277a2 2 0 0 1-1.788 0l-4.212-2.106a2 2 0 0 0-1.788 0l-3.659 1.83A1 1 0 0 1 3 19.381V6.618a1 1 0 0 1 .553-.894l4.553-2.277a2 2 0 0 1 1.788 0z"/><path d="M15 5.764v15"/><path d="M9 3.236v15"/></svg>
+    </button>
+    <div class="door-map" id="doorMap" hidden>
+      <div class="map-paper">
+        <p class="map-title">Map</p>
+        <ul id="mapList"></ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="hall-card-wrap">
+    <div class="hall-card" id="hallCard">
+      <p class="kicker" id="hallKicker">Door 01 of 06</p>
+      <h2 id="hallTitle">Experience</h2>
+      <p class="hand" id="hallLine"></p>
+      <div class="hall-actions">
+        <button type="button" class="btn-signal" id="openDoorBtn">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20H2"/><path d="M11 4.562v16.157a1 1 0 0 0 1.242.97L19 20V5.562a2 2 0 0 0-1.515-1.94l-4-1A2 2 0 0 0 11 4.561z"/><path d="M11 4H8a2 2 0 0 0-2 2v14"/><path d="M14 12h.01"/><path d="M22 20h-3"/></svg>
+          Open door
+        </button>
+        <button type="button" class="btn-line" id="nextDoorBtn">Next door ↓</button>
+        <button type="button" class="btn-line sq" id="prevDoorBtn" aria-label="Previous door">↑</button>
+        <span class="hint">Scroll · swipe · arrow keys</span>
+      </div>
+    </div>
+  </div>
+  <p class="sr-only" aria-live="polite" id="hallLive"></p>
+</div>
+
+<!-- room opened from a door -->
+<div id="room" class="room" role="dialog" aria-modal="true" aria-label="Room" hidden>
+  <div class="room-bar">
+    <button type="button" class="hud-btn back" id="roomBack">← Back to hallway</button>
+    <span class="hud-box room-label" id="roomLabel"></span>
+  </div>
+  <div class="room-body" id="roomBody"></div>
+</div>
+
+<!-- sketch cursor -->
+<div id="cursor" class="cursor" aria-hidden="true">
+  <svg width="30" height="34" viewBox="0 0 30 34"><path d="M2 2 L2 23 L7.5 18 L11.5 27 L15 25.5 L11 16.5 L18.5 16.5 Z" fill="var(--cursor-fill, #f4f1ea)" stroke="#111" stroke-width="2" stroke-linejoin="round"/></svg>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
